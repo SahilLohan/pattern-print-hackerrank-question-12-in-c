@@ -1,0 +1,1 @@
+# pattern-print-hackerrank-question-12-in-c
