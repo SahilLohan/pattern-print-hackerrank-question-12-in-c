@@ -32,3 +32,68 @@ int main()
 
     return 0;
 }
+
+
+
+#include <stdio.h>
+
+int main()
+{
+    int n,k,i,j;
+   scanf("%d", &k);
+   n=k+1;
+      // Complete the code to print the pattern.
+    int a[n][n];
+    
+    
+    for(i=1;i<n;i++)
+    {
+        for(j=1;j<2*k;j++)
+        {
+            if(j>=i&&j<((2*n)-i-1)&&i<n)
+            {printf("%d ",n-i);
+            a[i][j]=n-i;
+            }
+            else if(j>=1&&j<i&&i<n)
+            {printf("%d ",n-j);
+            a[i][j]=n-j;
+                
+            }
+            else if(j>=(2*n)-i-1&&i<n)
+            {printf("%d ",j-n+2);
+            a[i][j]=j-n+2;
+                
+            }
+            else 
+            {printf("%d ",n);
+            a[i][j]=n;
+                
+            }
+            
+            if(j==(2*k)-1)
+            printf("\n");
+        }}
+         //now print the niche waali cheej thread_local\n
+        
+        for(i=k-1;i>=1;i++)
+        {
+            for(j=1;j<2*k;j++)
+            {   if(j<k+2)
+                printf("%d ",a[i][j]);
+                else if(j>=k+2)
+                {
+                    printf("%d ",a[i][(2*k)-j]);
+                }
+                if(j==(2*k)-1)
+            printf("\n");
+                
+             }
+             i--;
+             i--;
+        }
+    
+    
+
+    return 0;
+}
+
